@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP | Katio Studio</title>
+
+    <style>
+        *,
+        *::after,
+        *::before{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            height: 10vh;
+            background-color: black;
+            position: relative;
+
+            #user{
+                position: absolute;
+
+                top: 50%;
+                right: 2%;
+                transform: translateY(-50%);
+
+                display: flex;
+
+                justify-content: center;
+
+                & p{
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                & img{
+                    border-radius: 50%;
+                    border: none;
+                    height: 5vh;
+                    width: 5vh;
+                }
+            }
+
+        }
+        main{
+            display: grid;
+            height: 90vh;
+            overflow: hidden;
+
+            grid-template-columns: 1fr 6fr;
+        }
+        section{
+            background-color: red;
+        }
+        #content-katio{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="user">
+            <img src="https://pbs.twimg.com/profile_images/1679171429089288192/GIioMxf4_200x200.jpg" alt="user-img">
+            <p>name</p>
+        </div>
+    </header>
+    <main>
+        <section></section>
+        <div id="content-katio">
+
+        </div>
+    </main>
+</body>
+</html>
